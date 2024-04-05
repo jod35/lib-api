@@ -36,10 +36,7 @@ async def update_book(
     update_data: BookCreateModel,
     session: AsyncSession = Depends(get_session),
 ):
-    updated_book = await BookService(session).update_book(
-        book_id,
-        update_data
-    )
+    updated_book = await BookService(session).update_book(book_id, update_data)
 
     return updated_book
 
