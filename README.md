@@ -1,5 +1,5 @@
 # Lib API
-A simple REST API for a book manager service
+A simple REST API for a book manager service. This source code was written in the making of this [video](https://youtu.be/I8WiIXMDydw)
 
 
 ## Prerequisites

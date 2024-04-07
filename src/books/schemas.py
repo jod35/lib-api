@@ -3,10 +3,16 @@ from pydantic import BaseModel
 
 
 class BookResponseModel(Book):
+    """
+        This class is used to validate the response when getting book objects
+    """
     pass
 
 
 class BookCreateModel(BaseModel):
+    """
+        This class is used to validate the request when creating or updating a book
+    """
     title: str
     author: str
     isbn: str

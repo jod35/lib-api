@@ -4,6 +4,9 @@ from uuid import UUID, uuid4
 from datetime import datetime
 
 class Book(SQLModel, table = True):
+    """
+    This class represents a book in the database
+    """
     __tablename__ = 'books'
     uid:UUID = Field(
         sa_column=Column(pg.UUID ,primary_key=True,
